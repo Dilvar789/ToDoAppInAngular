@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app2';
+  title = 'Dilvar Khangurha';
+ // Resources="Today Date is "+ new Date();
+   productPrice=[];
+   productprice;
+   onclickProduct(ProductName: any)
+   {
+     this.productPrice.push(ProductName);
+   }
+   onclickPrice(totalPrice: any)
+   {
+     this.productprice=totalPrice;
+   }
 }
